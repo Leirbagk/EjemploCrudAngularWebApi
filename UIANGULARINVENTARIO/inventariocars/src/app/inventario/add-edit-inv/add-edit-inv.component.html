@@ -1,0 +1,54 @@
+
+<!-- <button (click)="addInventario()" *ngIf="inv.AutosId==0" class="btn btn-primary">
+    Agregar
+</button>
+<button (click)="updateInventario()" *ngIf="inv.AutosId!=0" class="btn btn-primary">
+    Update
+</button> -->
+<div class="d-flex flex-row bd-highlight mb-3">
+
+<div class="form-froup row" >
+
+    <label class="col-sm-2 col-form-label">Nombre del Auto</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="NombreAuto"
+        placeholder="Ingrese nombre del auto">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Numero Economico</label>
+    <div class="col-sm-10">
+       <input type="text" class="form-control" [(ngModel)]="NumeroEconomico"
+        placeholder="Ingrese numero del auto">
+    </div>
+    <label class="col-sm-2 col-form-label">Marca </label>
+    <div class="col-sm-10">
+       <input type="text" class="form-control" [(ngModel)]="MarcaAuto"
+        placeholder="Ingrese marca del auto">
+    </div>
+    <label class="col-sm-2 col-form-label">Modelo</label>
+    <div class="col-sm-10">
+       <input type="text" class="form-control" [(ngModel)]="ModeloAuto"
+        placeholder="Ingrese modelo del auto">
+    </div>
+    <label class="col-sm-2 col-form-label">Placa Federal</label>
+    <div class="col-sm-10">
+       <input type="text" class="form-control" [(ngModel)]="PlacaFederal"
+        placeholder="Ingrese placa federal  del auto">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Año de operacion</label>
+    <div class="col-sm-10">
+        <input type="date"  [(ngModel)]="AnoOperacion">
+    </div>
+
+
+<button (click)="addInventario()" *ngIf="inv.AutosId==0" class="btn btn-primary">
+    Agregar
+</button>
+
+<button (click)="updateInventario()" *ngIf="inv.AutosId!=0" class="btn btn-primary">
+    Editar
+</button>
+
+
+</div>
